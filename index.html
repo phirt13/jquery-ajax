@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,22 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
   </head>
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <body>
-    <header role="banner">
+  <body class="frame">
+
+    <header class="header">
+      <h1>Flicker Filter</h1>
+      <p>Enter a tag name to search for public Flickr photos by tag name.</p>
+      <form id="flickrFilter">
+        <input id="tagSearch" type="text" val=""/>
+        <button class="btn">Show</button>
+      </form>
+      <p>Click on the photo to navigate to its Flickr source page.
     </header>
-    <main role="main">
-      <article role="article">
-      </article>
+
+    <main class="container">
+      <section id="photoContainer">
+      </section>
     </main>
-    <footer role="contentinfo">
-    </footer>
+
   </body>
 
 <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/ajax.js"></script>
+
 </html>
